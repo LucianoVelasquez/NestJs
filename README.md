@@ -6,4 +6,4 @@ Aquí encontrarás una colección de proyectos desarrollados con **NestJS**, un 
 
 ## Próximamente ✨
 
-Este espacio está destinado a albergar diversos proyectos hechos con NestJS. ¡Mantente atento/a a futuras actualizaciones! 🏗️
+Este espacio está destinado a albergar diversos proyectos hechos con NestJS. ¡Mantente atento/a a futuras actualizaciones! 

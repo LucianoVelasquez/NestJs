@@ -24,9 +24,18 @@
 
 ## Descripción 🚗💨
 
-¡Bienvenido al proyecto **Car Dealership API*! 🛠️
+¡Bienvenido al proyecto **Car Dealership API**! 🛠️
 
-Este proyecto es una API desarrollada con NestJS que servirá como backend para una aplicación de concesionario de automóviles. Permitirá gestionar información sobre vehículos, marcas, modelos y más. ¡Prepárate para acelerar a fondo con NestJS! 🏎️💨
+Este proyecto consiste en una **API RESTful** robusta y escalable, construida con el framework **NestJS**. Su objetivo principal es servir como el sistema backend para una aplicación de concesionario de automóviles moderna y eficiente.
+
+### ¿Qué podrás hacer con esta API? 🚦
+
+*   **Gestionar un inventario completo de vehículos**: Registrar nuevos autos, actualizar su información (marca, modelo, año, precio, características, etc.) y eliminarlos.
+*   **Administrar marcas y modelos**: Mantener un catálogo de las marcas y modelos de vehículos disponibles.
+*   **Consultas flexibles**: Realizar búsquedas y filtrados de vehículos por diversos criterios (ej. por marca, por rango de precios, por año).
+*   **Operaciones CRUD completas**: La API expondrá endpoints para Crear, Leer, Actualizar y Eliminar (CRUD) los recursos principales (vehículos, marcas, etc.), siguiendo las mejores prácticas de diseño RESTful.
+
+¡Prepárate para acelerar a fondo con NestJS y construir una increíble aplicación de concesionario! 🏎️💨
 
 ## Configuración del Proyecto ⚙️
 

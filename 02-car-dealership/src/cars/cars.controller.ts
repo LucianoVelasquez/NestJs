@@ -1,4 +1,4 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, ParseIntPipe, Patch, Post } from '@nestjs/common';
 import { CarsService } from './cars.service';
 import { ICar } from './common/Icar';
 
@@ -13,19 +13,23 @@ export class CarsController {
     }
 
      @Get(":id")
-    public getCarById( @Param("id") id ) : ICar | string {
-        
-        let index = parseInt(id);
-        
-        if( isNaN(index) ) {
-            return `this id "${id}" is not a number`;
-        }
+    public getCarById( @Param("id", ParseIntPipe) id : number ) : ICar | string {
 
-        if( index > this.CarsService.findAll().length || index <= 0) {
-            return `${index} is Invalid ID`;
-        }
-
-        return this.CarsService.findById(index);
-
+        return this.CarsService.findById(id);
     } 
+
+    @Post()
+    public createCar( @Body() body : ICar ) : ICar {
+        return body;
+    }
+
+    @Patch(":id")
+    public updateCar(@Param("id", ParseIntPipe) id : number, @Body() body : ICar ) : ICar {
+        return body;
+    }
+
+    @Delete()
+    public deleteCar( @Param("id", ParseIntPipe) id : number ) : string  {
+        return "Car deleted";
+    }
 }

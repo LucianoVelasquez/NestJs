@@ -68,7 +68,8 @@ export class CarsService {
                 if(car.id == id){
                     car = {
                         ...car,
-                        ...updateCarDto
+                        ...updateCarDto,
+                        id,
                     }
                 }
                 return car;
@@ -78,4 +79,11 @@ export class CarsService {
         return car;
     }
 
+    delete(id:string){
+        let car = this.findById(id);
+
+        this.cars = this.cars.filter(car => car.id !== id);
+
+        return car;
+    }
 }

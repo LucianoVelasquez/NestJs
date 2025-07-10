@@ -32,7 +32,7 @@ export class CarsController {
     }
 
     @Delete()
-    public deleteCar( id : string ) : string  {
-        return "Car deleted";
+    public deleteCar(@Param('id', ParseUUIDPipe) id : string )  {
+        return this.CarsService.delete(id);
     }
 }

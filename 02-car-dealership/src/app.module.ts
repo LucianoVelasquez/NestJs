@@ -5,7 +5,7 @@ import { BrandsModule } from './brands/brands.module';
 @Module({
   imports: [CarsModule, BrandsModule],
   controllers: [],
-  providers: [],
+  providers: [], 
   exports:[],
 })
 export class AppModule {}

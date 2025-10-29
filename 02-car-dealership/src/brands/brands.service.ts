@@ -8,11 +8,11 @@ import { v4 as uuid } from 'uuid'
 export class BrandsService {
 
   private brands: Brand[] = [
-    {
+   /*  {
       id: uuid(),
       name: 'Touota',
       createdAt: new Date().getTime()
-    }
+    } */
   ]
 
   create(createBrandDto: CreateBrandDto) {
@@ -63,5 +63,9 @@ export class BrandsService {
 
     return `This action removes a #${id} brand`;
   }
+
+   fillBrandsWithSeedData(brands: Brand[]){
+      this.brands = brands;
+    }
 
 }
